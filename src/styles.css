@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: transparent;
+}
+
+.floating-card {
+  width: 360px;
+  min-height: 120px;
+  padding: 16px 18px 12px;
+  border-radius: 16px;
+  background: rgba(20, 20, 20, 0.86);
+  color: #f9fafb;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quote-text {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  white-space: pre-wrap;
+}
+
+.editor {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(31, 41, 55, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editor-textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(156, 163, 175, 0.8);
+  padding: 6px 8px;
+  font-size: 13px;
+  background: rgba(15, 23, 42, 0.9);
+  color: #f9fafb;
+  resize: vertical;
+}
+
+.editor-textarea:focus {
+  outline: none;
+  border-color: rgba(248, 250, 252, 0.9);
+}
+
+.editor-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.toolbar-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(249, 250, 251, 0.1);
+  padding: 4px 10px;
+  font-size: 12px;
+  background: rgba(55, 65, 81, 0.8);
+  color: #f9fafb;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.toolbar-btn:hover {
+  background: rgba(75, 85, 99, 0.9);
+}
+
+.toolbar-select {
+  border-radius: 999px;
+  border: 1px solid rgba(249, 250, 251, 0.12);
+  padding: 3px 8px;
+  font-size: 12px;
+  background: rgba(17, 24, 39, 0.9);
+  color: #e5e7eb;
+}
+

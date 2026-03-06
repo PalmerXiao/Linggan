@@ -1,0 +1,18 @@
+[package]
+name = "linggan-desktop-assistant"
+version = "0.1.0"
+description = "灵感桌面助手"
+authors = ["you"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-shell = "2"
+
+[profile.release]
+opt-level = "s"
